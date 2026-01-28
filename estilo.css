@@ -43,10 +43,10 @@ button.add{
 
 main{
 	display: flex;
-	flex-flow: row-wrap;
+	flex-flow: row wrap;
 	width: 90%;
 	margin: auto auto;
-	border: 1px solid blue;
+	//border: 1px solid blue;
 	padding-top: 40px;	
 }
 
@@ -58,7 +58,25 @@ main{
 	background: white;
 	height: 80px;
 	width: 100%;
-	box-shadow: 0 0 20px #cc;
+	box-shadow: 0 0 20px #ccc;
+	margin-bottom: 1%;
+}
+
+.item-feito{
+	display: flex;
+	flex-flow: row-wrap;
+	justify-content: center;
+	align-items: center;
+	background: #d4f6d9;
+	height: 80px;
+	width: 100%;
+	box-shadow: 0 0 20px #ccc;
+	margin-bottom: 1%;
+}
+
+.item-feito .item-nome{
+	text-decoration: line-through;
+	color: gray;
 }
 
 .item-icone{
@@ -84,6 +102,7 @@ main{
 }
 
 .delete{
+	align-items: center;
 	background: red;
 	color: white;
 	border: none;
@@ -91,4 +110,8 @@ main{
 	height: 80px;
 	width: 100%;
 	cursor: pointer;	
+}
+
+#check_circle{
+	color: green;	
 }
